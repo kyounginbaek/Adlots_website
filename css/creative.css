@@ -16,7 +16,7 @@ body {
 /*바*/
 hr {
     max-width: 50px;
-    border-color: #2e7de1;
+    border-color: #1966cb;
     border-width: 3px;
 }
 
@@ -43,7 +43,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: "Helvetica Neue", "Apple SD Gothic Neo", "NanumGothic", "나눔고딕", "맑은 고딕", Arial
 
 }
 
@@ -91,7 +91,7 @@ aside {
     /*text-transform: uppercase;*/
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight:950;
-    color: #2e7de1;
+    color: #1966cb;
     font-size: 20px;
 }
 
@@ -110,7 +110,7 @@ aside {
 
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
-    color: #2e7de1;
+    color: #1966cb;
 }
 
 .navbar-default .nav > li.active>a,
@@ -238,7 +238,7 @@ header .header-content .header-content-inner p {
         margin-right: auto;
         margin-left: auto;
         max-width: 80%;
-        font-size: 18px;
+        font-size: 20px;
     }
 }
 
@@ -256,7 +256,11 @@ header .header-content .header-content-inner p {
         margin: 20px auto 0;
     }
 }
-
+/* 작성 media*/
+@media(min-width:600px) {
+  #main h1 { font-size: 10pt;
+    }
+}
 .service-box p {
     margin-bottom: 0;
 }
@@ -300,7 +304,7 @@ header .header-content .header-content-inner p {
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
     /*text-transform: uppercase;*/
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 300;
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
@@ -317,7 +321,7 @@ header .header-content .header-content-inner p {
     }
 
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-        font-size: 22px;
+        font-size: 20px;
     }
 }
 
@@ -326,7 +330,7 @@ header .header-content .header-content-inner p {
 }
 
 .text-primary {
-    color: #2e7de1;
+    color: #1966cb;
 }
 
 .no-gutter > [class*=col-] {
@@ -405,7 +409,7 @@ fieldset[disabled] .btn-default.active {
 .open > .dropdown-toggle.btn-primary {
     border-color: #ed431f;
     color: #fff;
-    background-color: #2e7de1;
+    background-color: #1966cb;
 }
 
 .btn-primary:active,
@@ -454,7 +458,7 @@ fieldset[disabled] .btn-primary.active {
     border-radius: 300px;
     /*text-transform: uppercase;*/
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-    font-weight: 700;
+    font-weight: 300;
 }
 
 .btn-xl {
@@ -484,4 +488,12 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #222;
+}
+
+footer {
+  padding: 10px;
+  background-color: #191d20;
+  color: #C5C6C7;
+  text-align:center;
+  font-size: 0.75em;
 }
