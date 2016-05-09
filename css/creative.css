@@ -16,7 +16,7 @@ body {
 /*바*/
 hr {
     max-width: 50px;
-    border-color: #1966cb;
+    border-color: #ffffff;
     border-width: 3px;
 }
 
@@ -30,6 +30,7 @@ a {
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
+
 }
 
 a:hover,
@@ -46,15 +47,15 @@ h6 {
     font-family: "Helvetica Neue", "Apple SD Gothic Neo", "NanumGothic", "나눔고딕", "맑은 고딕", Arial
 
 }
-
+/*광고를 클릭해서 포인트를 모아주세요*/
 p {
     margin-bottom: 20px;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.5;
 }
 
 .bg-primary {
-    background-color: #90cace;
+    background-color: #3694d2;
 }
 
 .bg-dark {
@@ -90,9 +91,13 @@ aside {
 .navbar-default .navbar-header .navbar-brand {
     /*text-transform: uppercase;*/
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-    font-weight:950;
-    color: #1966cb;
-    font-size: 20px;
+    font-weight:800;
+    float: left;
+    height: 50px
+    color: #3695d2;
+    font-size: 18px;
+    padding: 15px 15px;
+    line-height: 20px;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
@@ -103,19 +108,19 @@ aside {
 .navbar-default .nav > li>a,
 .navbar-default .nav>li>a:focus {
   /*  text-transform: uppercase;*/
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 700;
     color: #222; /*검정*/
 }
 
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
-    color: #1966cb;
+    color: #3694d2;
 }
-
+/*현재 home or service or contact 색깔*/
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: #1966cb!important;
+    color: #222!important;
     background-color: transparent;
 }
 
@@ -156,25 +161,25 @@ aside {
 /*작아 졌을떄 title의 ADlots*/
     .navbar-default.affix .navbar-header .navbar-brand {
         font-size: 18px;
-        color: #1966cb;
+        color: #3694d2;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
         color: #eb3812;
     }
-
+/*아래page기본 home service contact*/
     .navbar-default.affix .nav > li>a,
     .navbar-default.affix .nav>li>a:focus {
-        color: #222;
+        color: #a0dcf1;
     }
-
+/*아래page 마우스 올렸을떄*/
     .navbar-default.affix .nav > li>a:hover,
     .navbar-default.affix .nav>li>a:focus:hover {
-        color: #1966cb;
+        color: #222;
     }
 }
-
+/*hearder 부분 첫페이지 (Home)*/
 header {
     position: relative;
     width: 100%;
@@ -206,15 +211,18 @@ header .header-content .header-content-inner h1 {
 header .header-content .header-content-inner hr {
     margin: 30px auto;
 }
-/*실록있게 얻어가는 모바일 솔루션*/
+/*작아졌을때 - 작은 포인트도 우리에겐 소중하다*/
 header .header-content .header-content-inner p {
     margin-bottom: 50px;
-    font-size: 18px;
-    font-weight: 300;
+    font-size: 14px;
+    font-weight: 100;
     color: rgba(255,255,255,.7);
 }
 
 @media(min-width:768px) {
+  .intro-message > h1 {
+    font-size: 3em;
+}
     header {
         min-height: 100%;
     }
@@ -233,11 +241,12 @@ header .header-content .header-content-inner p {
         margin-left: auto;
         max-width: 1000px;
     }
-
+/*작은포인트도 우리에겐 소중하다*/
     header .header-content .header-content-inner p {
         margin-right: auto;
         margin-left: auto;
         max-width: 80%;
+        font-weight: 500;
         font-size: 20px;
     }
 }
@@ -356,6 +365,7 @@ header .header-content .header-content-inner p {
     border-color: #ededed;
     color: #222;
     background-color: #f2f2f2;
+
 }
 
 .btn-default:active,
@@ -400,16 +410,16 @@ fieldset[disabled] .btn-default.active {
     transition: all .35s;
 
 }
-
+/*google play 버튼 커서가 올라갔을떄*/
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary.focus,
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-    border-color: #ed431f;
-    color: #fff;
-    background-color: #1966cb;
+
+    color: none;
+    background-color: #fff ;
 }
 
 .btn-primary:active,
@@ -445,17 +455,17 @@ fieldset[disabled] .btn-primary.active {
     background-color: #fff;
 
     bottom: 0;
-    height: 37px;
+    height: 35px;
     margin-left: -63.5px;
     margin-bottom: 60px;
     background-image: url(../img/kakaoimg/btn_google_off.png);
-    background-size: contain;
+    background-size: contain
 
 }
 
 .btn {
     border: 0;
-    border-radius: 100px;
+    border-radius: 30px;
     /*text-transform: uppercase;*/
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 300;
@@ -489,11 +499,32 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #222;
 }
-
+/*아래 사업자번호있고 있는곳*/
 footer {
   padding: 100px;
   background-color: #191d20;
   color: #C5C6C7;
-  text-align:center;
+  text-align:center;;
   font-size: 0.75em;
+
+}
+#sns{
+  float: center;
+  margin: 0 auto;
+}
+#footer_logo{
+  width: 150px;
+  float: left;
+}
+.gmap-area .gmap iframe{
+  height: 280px
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#gmap{
+
+  margin: 0 auto;
+  text-align: center;
 }
